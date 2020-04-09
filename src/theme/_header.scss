@@ -1,0 +1,132 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  &-address {
+    &-infos {
+      display: flex;
+      flex-direction: column;
+      // align-items: center;
+    }
+
+    &-buttons {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  &-user {
+    &-view {
+      max-width: rem-calc(980);
+      width: 100%;
+      padding: rem-calc(10) rem-calc(20);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      @include for-sm (){
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+      }
+    }
+    &.ant-layout-header {
+      background-color: #c2c73a;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      padding: rem-calc(20) 0 rem-calc(24);
+      margin: 0;
+      margin-bottom: rem-calc(20);
+      height: auto;
+      
+      
+
+      .ant-typography {
+        margin: 0;
+        margin-bottom: 0;
+        line-height: 100%;
+
+        &-header {
+          &-normal {
+            font-size: rem-calc(12);
+            margin: rem-calc(10) 0;
+          }
+          &-large {
+            color: unset;
+            font-size: rem-calc(20);
+            margin-bottom: rem-calc(10);
+          }
+        }
+      }
+      
+    }
+    &-content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      color: #ffffff;
+      // width: 50%;
+    }
+    &-extra {
+      // width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      margin-left: rem-calc(-8);
+    }
+    &-rules {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding-top: rem-calc(20);
+      border-top: 1px solid rgba($color: #ffffff, $alpha: 0.2);
+      .content-view{
+        flex-direction: row;
+        justify-content: flex-start;
+        .ant-typography {
+          margin-right: rem-calc(20);
+        }
+      }
+    }
+  }
+
+  &-basic{
+    flex-direction: column;
+    &.ant-layout-header {
+      // background-color: red;
+      flex-direction: column;
+      height: auto;
+      align-items: flex-start;
+      margin-top: rem-calc(10);
+
+    }
+    &-nav{
+      line-height: 100%;
+    }
+    &-content{
+      line-height: 100%;
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      
+      @include for-xl (){
+        flex-direction: row;
+        align-items: stretch;
+      }
+
+      .ant-typography{
+        &-header-text{
+          line-height: 130%;
+          font-size: rem-calc(20);
+          margin: rem-calc(8) 0;
+        }
+      }
+    }
+  }
+}

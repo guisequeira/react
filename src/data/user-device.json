@@ -1,0 +1,4 @@
+[{"id":1,"name":"Celka","device":"Android","new_device":false,"blacklist":false},
+{"id":2,"name":"Asia","device":"Iphone","new_device":false,"blacklist":false},
+{"id":3,"name":"Auguste","device":"Iphone","new_device":true,"blacklist":false},
+{"id":4,"name":"Genevieve","device":"Desktop","new_device":true,"blacklist":false}]

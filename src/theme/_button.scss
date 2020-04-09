@@ -1,0 +1,91 @@
+.ant-btn {
+  font-size: rem-calc(12);
+  font-weight: 500;
+  color: unset;
+  border: solid 1px #bcc3c6;
+  background: none;
+  line-height: 100%;
+  padding: rem-calc(2) rem-calc(15);
+  margin: rem-calc(5);
+  // background-color: red;  
+  height: rem-calc(26);
+  box-shadow: none;
+  .anticon{
+    line-height: 0;
+    font-size: rem-calc(14);
+    svg{
+     path{
+       fill: unset;
+     }
+   }
+  }
+
+  &:hover, &:focus{
+    color: #444444;
+    border-color: #ffffff;
+    // border: none;
+  }
+  
+  &-primary{
+    background-color: #50b7d8;
+    color: #f1f4f5;
+    border: none;
+  }
+  &-danger{
+    background-color: #e54170;
+    color: #f1f4f5;
+    border: none;
+  }
+  &-link{
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+:first-child
+  &-circle{
+    padding: 0;
+    &-small{
+      padding: 0;
+      border-radius: 50%;
+      font-size: rem-calc(9);
+      &.ant-btn-icon-only{
+        width: rem-calc(18);
+        height: rem-calc(18);
+      }
+    }
+  }
+
+  &-shape{
+    background-color: #ffffff;
+    color: #c2c73a;
+    
+    &:hover{
+      color: darken(#c2c73a, 15);
+      // box-shadow: 
+      box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.35);
+    }
+    
+    &.large{
+      // line-height: 120%;
+      font-size: rem-calc(20);
+      height: rem-calc(40);
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      border: none;
+
+      .anticon{
+        display: flex;
+        align-items: center;
+      }
+
+       svg{
+         width: .5rem;
+         height: .5rem;
+        path{
+          fill: unset;
+        }
+      }
+    }
+  }
+}

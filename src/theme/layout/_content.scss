@@ -1,0 +1,34 @@
+.content{
+  // width: 100%;
+  &-view{
+    // width: 100%;
+    // margin: 0 auto;
+    padding: rem-calc(8);
+    // background-color: red;
+    min-width: rem-calc(300);
+    
+    @include for-xs (){
+      // background-color: red;
+    }
+    @include for-sm (){
+      // background-color: blue;
+    }
+    @include for-md (){
+      // background-color: blueviolet;
+    }
+    @include for-lg (){
+      padding: 0;
+      margin: 0 auto;
+      // background-color: green;
+      max-width: rem-calc(768);
+    }
+    @include for-xl (){
+      max-width: rem-calc(980);
+      // background-color: greenyellow;
+    }
+    @include for-xxl (){
+      max-width: rem-calc(980);
+      // background-color: goldenrod;
+    }
+  }
+}

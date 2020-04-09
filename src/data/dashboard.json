@@ -1,0 +1,38 @@
+
+{
+  "header": {
+    "title": "Dashboard",
+    "breadcrumb": ["Empresa 1", "Empresa 2"]
+  },
+  "alerts":[
+    {
+      "title": "Usuários autorizados",
+      "value": "625"
+    },
+    {
+      "title": "Usuários bloqueados",
+      "value": "625"
+    },
+    {
+      "title": "Regra automática 1",
+      "value": "28 usuários com similaridade abaixo de 5%"
+    }
+  ],
+  "adress": {
+    "alerts": [
+      {
+        "title": "Endereços vádidos",
+        "value": "125"
+      },
+      {
+        "title": "Endereços inválidos",
+        "value": "12"
+      },
+      {
+        "title": "Usuários que cairam nas regras",
+        "value": "10"
+      } 
+    ]
+  }
+
+}

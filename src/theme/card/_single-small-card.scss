@@ -1,0 +1,44 @@
+.ant-card-type-single {
+  &.small{
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    margin-top: rem-calc(16);
+    margin-bottom: 0;
+    background-color: red;
+    
+    @include for-md (){
+      // margin-top: 0;
+      // margin-bottom: rem-calc(16);
+    }
+    @include for-lg (){
+      min-height: rem-calc(85);
+      .ant-card-body {
+        padding: rem-calc(8);
+      }  
+    }
+    .ant-card-body {
+      width: 100%;
+      flex-direction: column;
+      // justify-content: space-between;
+      align-items: initial;
+      min-height: rem-calc(96);
+      
+      @include for-md (){
+        min-height: rem-calc(90);
+      }
+      @include for-lg (){
+        min-height: rem-calc(96);
+      }
+      @include for-xl (){
+        min-height: rem-calc(120);
+      }
+
+      .ant-typography{
+        display: flex;
+        // width: 100%;
+        margin: rem-calc(5);
+      }
+    }
+  }
+}

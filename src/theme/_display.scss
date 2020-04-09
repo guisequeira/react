@@ -1,0 +1,40 @@
+.display {
+  &-full {
+    width: 100%;
+    flex-direction: column;
+    background-color: #ffffff;
+    margin-top: rem-calc(20);
+    border-radius: rem-calc(4);
+  }
+  
+  &-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: solid 1px #f1f4f5;
+    
+    .ant-typography {
+      font-size: rem-calc(14);
+      margin-bottom: 0;
+      &-display{
+        margin-left: rem-calc(11);
+        font-size: rem-calc(12);
+        color: '#bcc3c6';
+        font-weight: normal; 
+        
+      }
+    }
+    
+  }
+  &-content {
+    padding: rem-calc(10) rem-calc(20);
+  }
+  &-footer{
+    display: flex;
+    flex-direction: row;
+    padding: rem-calc(20);
+    justify-content: flex-end;
+  }
+  
+}

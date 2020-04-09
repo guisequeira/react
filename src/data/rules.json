@@ -1,0 +1,8 @@
+[{"id":1,"user":"tsneath0@csmonitor.com","rules":"Multiplas localizações simultaneas","type":"2FA"},
+{"id":2,"user":"mmaccostye1@admin.ch","rules":"Similaridade abaixo de 5%","type":"Contextual"},
+{"id":3,"user":"atrenholm2@desdev.cn","rules":"Similaridade abaixo de 5%","type":"Contextual"},
+{"id":4,"user":"lasquith3@wikia.com","rules":"Multiplas localizações simultaneas","type":"Contextual"},
+{"id":5,"user":"pputten4@prweb.com","rules":"Similaridade abaixo de 5%","type":"Contextual"},
+{"id":6,"user":"pmcartan5@bloomberg.com","rules":"Similaridade abaixo de 5%","type":"Contextual"},
+{"id":7,"user":"aheyward6@noaa.gov","rules":"Multiplas localizações simultaneas","type":"2FA"},
+{"id":8,"user":"sheustice7@photobucket.com","rules":"Similaridade abaixo de 5%","type":"2FA"}]

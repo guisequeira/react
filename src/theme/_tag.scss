@@ -1,0 +1,43 @@
+.ant-tag{
+  border-radius: rem-calc(2);
+  color: #ffffff;
+  background: none;
+  border: solid 1px;
+  border-color: rgba($color: #ffffff, $alpha: .4);
+  font-size: rem-calc(10);
+  font-weight: 500;
+  opacity: .7;
+  line-height: 120%;
+  padding: rem-calc(6) rem-calc(10);
+
+  &.tag{
+    &-flat{
+      border-radius: 50%;
+      opacity: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      // padding: rem-calc(5);
+      &-small{
+        line-height: 100%;
+        background-color: #cdd0d2;
+        // padding: rem-calc(3) rem-calc(5);
+        width: rem-calc(20);
+        height: rem-calc(20);
+        color: #384b54;
+        
+        &.danger{
+          color: #e73e6f;
+          background-color: #ffd6e2;
+        }
+        .anticon{
+          svg{
+            path{
+              fill: unset;
+            }
+          }
+        }
+      }
+    }
+  }
+}

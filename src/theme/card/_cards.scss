@@ -1,0 +1,58 @@
+@import "single-card", "single-small-card", "single-cover-card", "double-card", "display-card";
+
+.ant-card {
+  border-radius: rem-calc(4);
+  border: none;
+  margin-top: rem-calc(16);
+  .ant-card-extra {
+    font-size: rem-calc(9);
+    padding: 0;
+    color: unset;
+    .anticon {
+      svg {
+        path {
+          fill: unset;
+        }
+      }
+    }
+  }
+  .ant-card-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: unset;
+    padding: 0 rem-calc(8);
+    min-height: rem-calc(24);
+    &-wrapper {
+      width: 100%;
+    }
+    &-title {
+      font-size: rem-calc(12);
+      padding: rem-calc(8) 0;
+      @include for-lg() {
+        font-size: rem-calc(16);
+      }
+    }
+    @include for-lg() {
+      padding: 0 rem-calc(16);
+      min-height: rem-calc(48);
+    }
+  }
+  .ant-card-body {
+    align-items: initial;
+    justify-content: center;
+    min-height: rem-calc(80);
+    .ant-typography:not(.ant-typography-single-card-paragraph) {
+      .anticon {
+        svg {
+          path {
+            fill: unset;
+          }
+        }
+      }
+    }
+    @include for-lg() {
+      min-height: rem-calc(120);
+    }
+  }
+}

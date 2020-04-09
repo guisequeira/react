@@ -1,0 +1,28 @@
+// Variables
+
+
+
+$xs: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1600px;
+
+@mixin for-xs {
+  @media (max-width: ($xs - 1)) { @content; }
+}
+@mixin for-sm{
+  @media (min-width: $xs) { @content; }
+}
+@mixin for-md {
+  @media (min-width: $md ) { @content; }
+}
+@mixin for-lg {
+  @media (min-width: $lg) { @content; }
+}
+@mixin for-xl {
+  @media (min-width: $xl) { @content; }
+}
+@mixin for-xxl {
+  @media (min-width: $xxl) { @content; }
+}

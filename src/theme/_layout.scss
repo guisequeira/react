@@ -1,0 +1,47 @@
+.ant-layout {
+  flex-direction: column;
+  overflow-x: scroll;
+  .ant-layout-has-sider{
+    flex-direction: column;
+  }
+  &-header {
+    background: none;
+    margin: rem-calc(20) 0 0;
+    padding: rem-calc(20) 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    line-height: 100%;
+    flex: auto;
+
+    .ant-row{
+
+      width: 100%;
+    }
+  
+  
+    .ant-typography {
+      &-header-title {
+        font-size: rem-calc(28);
+        font-weight: normal;
+      }
+    }
+  }
+
+  // .table{
+  //   margin: rem-calc(20) 0;
+  //   background-color: #ffffff;
+  //   display: flex;
+  //   flex-direction: column;
+  //   &-header{
+  //     margin: 0;
+  //     padding: 0 rem-calc(30);
+  //     font-weight: 500;
+  //   }
+  //   .ant-table{
+  //     margin-top: 0;
+  //   }
+  // }
+}

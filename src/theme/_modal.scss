@@ -1,0 +1,130 @@
+// .ant-modal-close{
+//   display: none;
+// }
+.ant-modal{
+  width: 100%;
+  // position: unset;
+  &.zoom-enter, &.zoom-leave{
+    // animation-duration: 0;
+    // animation-duration: 0;
+    .ant-modal-close{
+      opacity: 0;
+    }
+  }
+  &-mask{
+    background-color: red;
+    background-color: #576870;
+  }
+  &-content{
+    color: #ffffff;
+    background-color: #62757f;
+    border-radius: rem-calc(6);
+    box-shadow: none;
+    // position: unset;
+    // margin-top: rem-calc(120);
+  }
+  &-title{
+    color: unset;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-header, &-body, &-footer{
+    padding: 0;
+    background: none;
+    color: unset;
+    border: none;
+  }
+  &-header{
+    padding: rem-calc(7) rem-calc(15);
+    border-bottom: 1px solid #576870;
+    margin: 1px;
+    font-size: rem-calc(14);
+  }
+  &-body{
+    padding: 2px;
+  }
+  
+  &-close{
+    position: fixed;
+    // opacity: 1;
+    // display: flex;
+    top: rem-calc(30);
+    right: rem-calc(30);
+    background-color: #ffffff;
+    width: rem-calc(40);
+    height: rem-calc(40);
+    border-radius: 50%;
+    animation: opacity 1.3ms linear;
+    &-x{
+      display: flex;
+      height: auto;
+      width: auto;
+      justify-content: center;
+      flex-direction: row;
+    }
+  }
+}
+.modal{
+  &-content{
+    &-header{
+      padding-left: rem-calc(60);
+      &-icon{
+        width: rem-calc(30);
+        height: rem-calc(30);
+        border-radius: 50%;
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: red;
+        margin-right: rem-calc(10);
+
+        svg{
+          // margin-right: rem-calc(1);
+          // margin-bottom: rem-calc(2);
+          path{
+            fill: unset;
+          }
+        }
+      }
+      .ant{
+        &-row{
+          display: flex;
+          flex-direction: row;
+          margin-top: rem-calc(30);
+          
+        }
+        &-col{
+          display: flex;
+          flex-direction: column
+
+        }
+      }
+    }
+  }
+  &-list{
+    margin-top: rem-calc(30);
+    .ant-list-item{
+        padding: 0 rem-calc(35);
+        border-bottom: none;
+        background-color: #536269;
+        // background-color: #62757f;
+        .ant-row{
+          padding: rem-calc(15) rem-calc(15);
+          border-bottom: 1px solid #62757f;
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+        }
+        .ant-col{
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    
+  }
+}
+
+

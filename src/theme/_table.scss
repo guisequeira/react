@@ -1,0 +1,95 @@
+.ant-table-expand-icon {
+  &-th {
+    display: none;
+  }
+}
+.ant-table-row-expand-icon {
+  &-cell {
+    display: none;
+  }
+}
+
+.ant {
+  &-pagination {
+    padding-right: rem-calc(16);
+  }
+  &-layout {
+    &.table {
+      margin: rem-calc(20) 0;
+      background-color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      &-line {
+        flex-direction: column;
+        background-color: red;
+      }
+    }
+    &-header {
+      &.table-header {
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0;
+        line-height: 100%;
+        padding: rem-calc(30) rem-calc(30);
+        font-size: rem-calc(16);
+        font-weight: 500;
+        @include for-sm() {
+          margin: 0;
+          flex-direction: row;
+          align-items: center;
+        }
+      }
+      .table-operations {
+        // background-color: red;
+        display: flex;
+        flex-direction: row;
+        margin-left: rem-calc(-8);
+        margin-top: rem-calc(8);
+
+        @include for-sm() {
+          margin-top: 0;
+          flex-direction: row;
+        }
+      }
+    }
+    .ant-row-flex {
+      &.table-line {
+        padding: 0 rem-calc(30);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        flex-flow: row wrap;
+      }
+    }
+  }
+  &-table {
+    // margin-top: rem-calc(40);
+    // background-color: #ffffff;
+    &-thead {
+      border-bottom: 1px solid #f1f4f5;
+      > tr > th {
+        background-color: #ffffff;
+        border-bottom: 1px solid #f1f4f5;
+        font-size: rem-calc(8);
+        letter-spacing: rem-calc(0.6);
+        color: #bcc3c6;
+        white-space: nowrap;
+        text-transform: uppercase;
+        padding: rem-calc(20) rem-calc(30) rem-calc(10);
+      }
+    }
+
+    &-tbody {
+      > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td {
+        background-color: lighten(#384b54, 70);
+      }
+      > tr > td {
+        padding: rem-calc(22) rem-calc(30);
+        border-bottom: 1px solid #f1f4f5;
+        font-size: rem-calc(10);
+      }
+    }
+  }
+}

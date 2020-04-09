@@ -1,0 +1,64 @@
+.ant-card {
+  &-type {
+    &-display {
+      margin: rem-calc(20) 0;
+      border: none;
+
+      &:first-child{
+        margin: 0 0 rem-calc(20);
+        
+      }
+      .ant-card-head {
+        border-color: rgba($color: #384b54, $alpha: 0.2);
+        &-title{
+          padding: rem-calc(12) 0; 
+        }
+      }
+
+      .ant-card-body {
+        .ant-row{
+          display: flex;
+          margin-bottom: rem-calc(35);
+          flex-direction: column;
+          flex-wrap: wrap;
+          @include for-md (){
+            
+            flex-direction: row;
+          }
+
+
+          &:last-child{
+            margin-bottom: 0;
+          }
+          .ant-col{
+            display: flex;
+            flex-direction: column
+          }
+        }
+        .double-body {
+          display: flex;
+          flex-direction: row;
+          width: 100%;
+          justify-content: center;
+
+          &-item {
+            padding: 0 rem-calc(20);
+            display: flex;
+            flex-direction: column;
+            // width: 100%;
+            align-items: center;
+            &:first-child{
+              border-right: 1px solid #f1f4f5;
+            }
+          }
+          .ant-typography-double-card-label {
+            font-size: rem-calc(12);
+          }
+          .ant-typography-double-card-text {
+            font-size: rem-calc(60);
+          }
+        }
+      }
+    }
+  }
+}

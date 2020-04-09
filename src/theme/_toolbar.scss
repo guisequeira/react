@@ -1,0 +1,38 @@
+.toolbar{
+  padding: rem-calc(7) rem-calc(10) rem-calc(7) rem-calc(40);
+  // padding: rem-calc(40);
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  // height: 40px;
+  border-bottom: 1px solid #f1f4f5;
+  min-width: rem-calc(300);
+
+  @include for-lg (){
+    padding: rem-calc(14) rem-calc(40);
+    
+  }
+  
+  &-search{
+    display: flex;
+    min-width: rem-calc(175);
+    flex-direction: row;
+    align-items: center;
+    .ant-btn{
+      width: rem-calc(30);
+      height: rem-calc(30);
+      font-size: rem-calc(14);
+    }
+    .ant-typography{
+      font-size: rem-calc(12);
+      margin: 0 rem-calc(5);
+      color: #bcc3c6;
+      width: rem-calc(135);
+    }
+  }
+
+  &-user{
+
+  }
+}
